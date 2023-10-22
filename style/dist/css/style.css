@@ -8,13 +8,189 @@
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
-  max-width: 100%;
+  border: none;
+  outline: none;
 }
 
-.container {
+body {
+  background-color: #FFFFFF;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+header img {
+  width: 8.3rem;
+  height: auto;
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  margin-right: 1.8rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+}
+header nav ul li:hover {
+  color: rgb(3, 3, 3);
+}
+header button {
+  padding: 0.8rem 1.2rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  font-size: 1.2ren;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  border: 2px solid #000000;
+}
+header button:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.hero {
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
-.container img {
-  margin: 3rem 50%;
+.hero .text-cont {
+  width: 63.88rem;
+  margin-top: 4.3rem;
+}
+.hero .text-cont h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 8.44rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 78.571%;
+  letter-spacing: -0.25rem;
+}
+.hero .text-cont h2 .circle {
+  width: 4.3rem;
+  height: auto;
+}
+.hero .text-cont h2 .rectangle {
+  width: 6.6rem;
+  height: auto;
+}
+.hero .marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 1rem;
+  position: relative;
+  background-color: #000000;
+  white-space: nowrap;
+  color: #FFFFFF;
+  padding: 0.5rem 0;
+  margin-bottom: 0.7rem;
+  position: absolute;
+  width: 105%;
+}
+.hero .marquee .marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  min-width: 100%;
+  animation: scroll 10s linear infinite;
+}
+.hero .marquee .marquee-content span {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+.hero .one {
+  z-index: 99;
+  transform: rotate(6.219deg);
+  bottom: 20%;
+}
+.hero .two {
+  transform: rotate(-4.573deg);
+  bottom: 30%;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.sample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  gap: 2rem;
+  padding: 0.3rem 0.8rem;
+}
+.sample .card-cont {
+  width: 30%;
+  height: 80%;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1.8rem;
+  gap: 4rem;
+}
+.sample .card-cont .circle {
+  width: 8.2rem;
+  height: 8.2rem;
+  background-color: #1C1C1C;
+  border-radius: 1000%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  stroke: rgba(242, 242, 242, 0.91);
+  filter: blur(1px);
+}
+.sample .card-cont .circle .kite {
+  width: 6.2rem;
+  height: 6.3rem;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+.sample .card-cont .text-container h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.sample .card-cont .text-container p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.83rem;
+  line-height: 1.57rem;
+}
+
+.action {
+  width: 100%;
+  height: 100vh;
 }
