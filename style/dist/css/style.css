@@ -168,7 +168,7 @@ header button:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  stroke: rgba(242, 242, 242, 0.91);
+  border: 1px solid rgba(242, 242, 242, 0.91);
   filter: blur(1px);
 }
 .sample .card-cont .circle .kite {
@@ -193,4 +193,19 @@ header button:hover {
 .action {
   width: 100%;
   height: 100vh;
+  padding: 0.3rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action .actiontxt {
+  width: 80%;
+  height: 100vh;
+}
+.action .actiontxt h2 {
+  font-size: 7rem;
+}
+.action .actiontxt h2 img {
+  width: 4.6rem;
+  height: auto;
 }
