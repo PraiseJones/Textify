@@ -34,7 +34,7 @@ header nav ul {
   align-items: center;
 }
 header nav ul li {
-  margin-right: 1.8rem;
+  margin-right: 2.2rem;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
@@ -91,12 +91,9 @@ header button:hover {
 }
 .hero .marquee {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: nowrap;
   overflow: hidden;
   gap: 1rem;
-  position: relative;
   background-color: #000000;
   white-space: nowrap;
   color: #FFFFFF;
@@ -108,13 +105,15 @@ header button:hover {
 .hero .marquee .marquee-content {
   flex-shrink: 0;
   display: flex;
-  align-items: center;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: space-around;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   min-width: 100%;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
-.hero .marquee .marquee-content span {
+.hero .marquee .marquee-content p {
   font-size: 3.8rem;
   font-weight: 400;
 }
@@ -192,20 +191,80 @@ header button:hover {
 
 .action {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   padding: 0.3rem 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.action .actiontxt {
+  width: 65%;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.action .actiontxt {
-  width: 80%;
-  height: 100vh;
+  flex-direction: column;
 }
 .action .actiontxt h2 {
-  font-size: 7rem;
+  color: #000;
+  text-align: center;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.91069rem;
+  letter-spacing: -0.25rem;
+  margin-bottom: 1.6rem;
 }
 .action .actiontxt h2 img {
   width: 4.6rem;
   height: auto;
+}
+.action .actiontxt p {
+  width: 79%;
+  color: #B8B8B8;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.action .actiontxt .action-btn {
+  display: flex;
+  gap: 2rem;
+}
+.action .actiontxt .action-btn button {
+  padding: 1.2rem 3rem;
+  background-color: #161616;
+  border-radius: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid #161616;
+  cursor: pointer;
+}
+.action .floating-cards {
+  width: 80%;
+  height: 150vh;
+  position: relative;
+}
+.action .floating-cards .card {
+  width: 18rem;
+  height: 18rem;
+  background-color: #161616;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #FFFFFF;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  position: absolute;
+}
+.action .floating-cards .one {
+  transform: rotate(7.6deg);
+}
+.action .floating-cards .two {
+  right: -10%;
+  transform: rotate(-4.91deg);
 }

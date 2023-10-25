@@ -39,7 +39,7 @@ header {
       align-items: center;
 
       li {
-        margin-right: 1.8rem;
+        margin-right: 2.2rem;
         cursor: pointer;
         color: $color7;
         font-size: 1.2rem;
@@ -106,12 +106,9 @@ header {
 
   .marquee {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: nowrap;
     overflow: hidden;
     gap: 1rem;
-    position: relative;
     background-color: $color2;
     white-space: nowrap;
     color: $color1;
@@ -123,13 +120,13 @@ header {
     .marquee-content {
       flex-shrink: 0;
       display: flex;
-      align-items: center;
       gap: 1rem;
-      justify-content: space-between;
+      justify-content: space-around;
+      user-select: none;
       min-width: 100%;
-      animation: scroll 10s linear infinite;
+      animation: scroll 20s linear infinite;
 
-      span {
+      p {
         font-size: 3.8rem;
         font-weight: 400;
       }
@@ -179,6 +176,13 @@ header {
     padding: 0.4rem 1.2rem;
     border-radius: 1.8rem;
     gap: 4rem;
+    // transition-property: transform;
+    // transition-duration: .4s;
+    // transition-timing-function: ease-in-out;
+
+    // &:hover{
+    //   transform: scale(1.06);
+    // }
 
     .circle {
       width: 8.2rem;
@@ -219,23 +223,99 @@ header {
 
 .action {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   padding: 0.3rem 0.8rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   .actiontxt {
-    width: 80%;
-    height: 100vh;
+    width: 65%;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h2 {
-      font-size: 7rem;
+      color: #000;
+      text-align: center;
+      font-size: 6.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 4.91069rem;
+      letter-spacing: -0.25rem;
+      margin-bottom: 1.6rem;
 
       img {
         width: 4.6rem;
         height: auto;
       }
+    }
+
+    p {
+      width: 79%;
+      color: $color6;
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: center;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .action-btn {
+      display: flex;
+      gap: 2rem;
+
+      button {
+        padding: 1.2rem 3rem;
+        // height: 4rem;
+        background-color: $color3;
+        border-radius: 0.8rem;
+        color: $color1;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.2rem;
+        border: 2px solid $color3;
+        cursor: pointer;
+        // transition-property: all;
+        // transition-duration: 0.2s;
+        // transition-timing-function: ease-in;
+
+        // &:hover {
+        //   background-color: transparent;
+        //   color: $color3;
+        // }
+      }
+    }
+  }
+
+  .floating-cards {
+    width: 80%;
+    height: 150vh;
+    position: relative;
+    // background-color: #000000;
+
+    .card {
+      width: 18rem;
+      height: 18rem;
+      background-color: $color3;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      color: $color1;
+      border-radius: .8rem;
+      padding: 2rem;
+      position: absolute;
+    }
+
+    .one{
+      transform: rotate(7.6deg);
+    }
+    .two{
+      right: -10%;
+      transform: rotate(-4.91deg);
     }
   }
 }
