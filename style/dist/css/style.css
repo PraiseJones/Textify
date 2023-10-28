@@ -245,7 +245,7 @@ header button:hover {
   cursor: pointer;
 }
 .action .floating-cards {
-  width: 80%;
+  width: 48%;
   height: 150vh;
   position: relative;
 }
@@ -265,6 +265,50 @@ header button:hover {
   transform: rotate(7.6deg);
 }
 .action .floating-cards .two {
-  right: -10%;
+  right: -9%;
+  top: 5%;
   transform: rotate(-4.91deg);
+}
+.action .floating-cards .three {
+  top: 48%;
+  left: 10%;
+  transform: rotate(-7.371deg);
+}
+.action .floating-cards .four {
+  top: 51%;
+  right: -18%;
+  transform: rotate(9.488deg);
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+footer img {
+  width: 24.5rem;
+  height: auto;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav a {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.29838rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.73506rem;
 }

@@ -292,7 +292,7 @@ header {
   }
 
   .floating-cards {
-    width: 80%;
+    width: 48%;
     height: 150vh;
     position: relative;
     // background-color: #000000;
@@ -305,17 +305,64 @@ header {
       justify-content: flex-start;
       align-items: flex-end;
       color: $color1;
-      border-radius: .8rem;
+      border-radius: 0.8rem;
       padding: 2rem;
       position: absolute;
     }
 
-    .one{
+    .one {
       transform: rotate(7.6deg);
     }
-    .two{
-      right: -10%;
+    .two {
+      right: -9%;
+      top: 5%;
       transform: rotate(-4.91deg);
     }
+    .three {
+      top: 48%;
+      left: 10%;
+      transform: rotate(-7.371deg);
+    }
+    .four {
+      top: 51%;
+      right: -18%;
+      transform: rotate(9.488deg);
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: $color2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  img {
+    width: 24.5rem;
+    height: auto;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+      margin-right: 1rem;
+      text-transform: uppercase;
+      color: $color1;
+      font-size: 1.1rem;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.29838rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.73506rem;
   }
 }
