@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="s" type="x-icon" href="./Assets/image/logoblack.png" />
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" href="./style/dist/css/style.css" />
     <link
       rel="stylesheet"
@@ -13,21 +14,31 @@
   </head>
   <body>
     <header>
-      <img src="./Assets/image/logoblack.png" alt="" />
+      <a href="./index.html"
+        ><img src="./Assets/image/logoblack.png" alt=""
+      /></a>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>About Us</li>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="">Product</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
         </ul>
       </nav>
-      <button>Signup</button>
+      <a href="./pages/Upload/upload.html" target="_blank">
+        <button>Try Out</button>
+      </a>
     </header>
 
     <main>
       <section class="hero">
         <div class="text-cont">
-          <h2 class="animate__animated animate__fadeInLeft">
+          <h2 class="animate__animated animate__fadeInUp">
             Convert
             <img src="./Assets/icons/circle.png" alt="" class="circle" /> your
             image
@@ -43,12 +54,8 @@
           <div class="marquee-content">
             <p>Convert your image to text.</p>
             <p>Convert your image to text.</p>
-            <p>Convert your image to text.</p>
-            <p>Convert your image to text.</p>
           </div>
           <div class="marquee-content" aria-hidden="true">
-            <p>Convert your image to text.</p>
-            <p>Convert your image to text.</p>
             <p>Convert your image to text.</p>
             <p>Convert your image to text.</p>
           </div>
@@ -58,20 +65,16 @@
           <div class="marquee-content">
             <p>Upload, Choose style, Convert, Download</p>
             <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>
           </div>
           <div class="marquee-content" aria-hidden="true">
             <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>
+            <p>Upload, Choose style, Convert, Download</p>            
           </div>
         </div>
       </section>
 
       <section class="sample">
-        <div class="card-cont one">
+        <div class="card-cont one animate__animated">
           <div class="circle">
             <!-- <div class="kite"></div> -->
           </div>
@@ -86,7 +89,7 @@
           </div>
         </div>
 
-        <div class="card-cont two">
+        <div class="card-cont two animate__animated">
           <div class="circle">
             <!-- <div class="kite"></div> -->
           </div>
@@ -101,7 +104,7 @@
           </div>
         </div>
 
-        <div class="card-cont three">
+        <div class="card-cont three animate__animated">
           <div class="circle">
             <!-- <div class="kite"></div> -->
           </div>
@@ -118,7 +121,7 @@
       </section>
 
       <section class="action">
-        <div class="actiontxt">
+        <div class="actiontxt animate__animated">
           <h2>
             Take textify<img src="./Assets/icons/logoicon.png" alt="" />for a
             spin
@@ -131,7 +134,9 @@
 
           <div class="action-btn">
             <button>Request a demo</button>
-            <button>Try for free</button>
+            <a href="/pages/Upload/upload.html" target="_blank">
+              <button>Try for free</button>
+            </a>
           </div>
         </div>
 
@@ -162,6 +167,8 @@
       </nav>
       <p>2023 Textify. All rights reserved</p>
     </footer>
+
+    <script src="./script/animation.js"></script>
     <script src="./script/app.js"></script>
   </body>
 </html>

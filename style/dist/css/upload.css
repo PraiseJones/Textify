@@ -1,0 +1,77 @@
+@import "/node_modules/animate.css/animate.css";
+.upload_sect {
+  height: 200vh;
+  width: 100%;
+  padding: 0.5rem 2.3rem;
+}
+.upload_sect h2 {
+  font-weight: 700;
+  font-size: 3.12rem;
+  letter-spacing: -0.25rem;
+  line-height: 6.7rem;
+}
+.upload_sect .upload_cont {
+  height: 33rem;
+  width: 100%;
+  background-color: #161616;
+  border-radius: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+.upload_sect .upload_cont input {
+  display: none;
+}
+.upload_sect .upload_cont label {
+  font-size: 1.58rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1.8rem;
+  width: 13.5rem;
+  height: 13.12rem;
+}
+.upload_sect .select_cont {
+  height: 8.5rem;
+  width: 100%;
+  background-color: #161616;
+  border-radius: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+.upload_sect button {
+  background-color: #161616;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.31rem;
+  height: 5.5rem;
+  width: 15.2rem;
+  border-radius: 1.2rem;
+  border: 3px solid #161616;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.upload_sect button:hover {
+  background-color: transparent;
+  color: #161616;
+  border: 3px solid #161616;
+}
