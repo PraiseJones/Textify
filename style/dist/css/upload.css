@@ -48,12 +48,43 @@
   width: 100%;
   background-color: #161616;
   border-radius: 2.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1.2rem;
-  overflow: hidden;
   margin-bottom: 1.6rem;
+  position: relative;
+  cursor: pointer;
+}
+.upload_sect .select_cont .default {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.upload_sect .select_cont .select {
+  width: 100%;
+  max-height: 11rem;
+  background-color: #161616;
+  color: #FFFFFF;
+  padding: 1.2rem;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: absolute;
+  top: 8.92rem;
+  left: 0.2rem;
+  display: none;
+}
+.upload_sect .select_cont .select div {
+  padding: 0.7rem;
+}
+.upload_sect .select_cont .select div:hover {
+  background-color: #B8B8B8;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 .upload_sect button {
   background-color: #161616;

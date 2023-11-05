@@ -340,7 +340,10 @@ footer nav a {
   margin-right: 1rem;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 1.1rem;
+}
+footer nav a i {
+  font-size: 2.1rem;
+  color: #FFFFFF;
 }
 footer p {
   color: rgba(255, 255, 255, 0.8);

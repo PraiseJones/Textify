@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="s" type="x-icon" href="./Assets/image/logoblack.png" />    
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="s" type="x-icon" href="./Assets/image/logoblack.png" />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
     <link rel="stylesheet" href="/style/dist/css/style.css" />
-    <link rel="stylesheet" href="/style/dist/css/upload.css">
+    <link rel="stylesheet" href="/style/dist/css/upload.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.min.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
     <title>Textify</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="/index.html"><img src="/Assets/image/logoblack.png" alt="" /></a>
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="">Product</a>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="./pages/Upload/upload.html" target="_blank">
-          <button>Try Out</button>
+      <a href="/index.html"><img src="/Assets/image/logoblack.png" alt="" /></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="">Product</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./pages/Upload/upload.html" target="_blank">
+        <button>Try Out</button>
+      </a>
+    </header>
+
+    <main>
+      <section class="upload_sect">
+        <h2>Step 1 of 2</h2>
+        <form class="upload_cont">
+          <input type="file" name="image input" id="input_img" />
+          <label for="input_img">Input Image</label>
+        </form>
+        <h2>Select Format</h2>
+        <div class="select_cont">
+          <div class="default">Select format</div>
+          <div class="select">
+            <div>JPEG</div>
+            <div>PNG</div>
+          </div>
+        </div>
+        <button>Convert</button>
+      </section>
+    </main>
+
+    <footer>
+      <img src="/Assets/icons/logowhite.png" alt="Textify white logo" />
+      <nav>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
         </a>
-      </header>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      </nav>
+      <p>2023 Textify. All rights reserved</p>
+    </footer>
 
-      <main>
-        <section class="upload_sect">
-          <h2>Step 1 of 2</h2>
-          <form class="upload_cont">
-              <input type="file" name="image input" id="input_img">
-              <label for="input_img">Input Image</label>
-          </form>
-          <h2>Select Format</h2>
-          <form class="select_cont">
-            <select name="format" id="format">
-              <option value="jpeg">Select format</option>
-              <option value="jpeg">JPEG</option>
-              <option value="jpeg">PNG</option>
-            </select>
-          </form>
-          <button>Convert</button>
-        </section>
-      </main>
-
-      <footer>
-        <img src="/Assets/icons/logowhite.png" alt="Textify white logo" />
-        <nav>
-          <a href="#" target="_blank">insta</a>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">x</a>
-          <a href="#" target="_blank">discord</a>
-        </nav>
-        <p>2023 Textify. All rights reserved</p>
-      </footer>
-
-      <script src="/script/func.js"></script>
-</body>
+    <script src="/script/func.js"></script>
+  </body>
 </html>
