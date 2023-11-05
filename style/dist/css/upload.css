@@ -77,14 +77,19 @@
   top: 8.92rem;
   left: 0.2rem;
   display: none;
+  --animate-duration: .5s;
 }
 .upload_sect .select_cont .select div {
   padding: 0.7rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
 }
 .upload_sect .select_cont .select div:hover {
   background-color: #B8B8B8;
   cursor: pointer;
-  border-radius: 0.5rem;
+}
+.upload_sect .select_cont .active {
+  display: flex;
 }
 .upload_sect button {
   background-color: #161616;

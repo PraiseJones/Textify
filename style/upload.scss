@@ -82,16 +82,22 @@
       top: 8.92rem;
       left: 0.2rem;
       display: none; 
+      --animate-duration: .5s;
 
       div{
         padding: .7rem;
+        border-radius: .5rem;
+        transition: background-color .2s ease-in-out;
 
         &:hover{
           background-color: $color6;
           cursor: pointer;
-          border-radius: .5rem;
         }
       }
+    }
+
+    .active{
+      display: flex;
     }
   }
 
