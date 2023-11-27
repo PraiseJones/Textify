@@ -15,7 +15,13 @@
 
 body {
   background-color: #FFFFFF;
+  position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  body {
+    max-width: 100%;
+  }
 }
 
 header {
@@ -55,17 +61,37 @@ header nav ul li a:hover {
 header nav ul li a:active {
   color: rgb(3, 3, 3);
 }
+@media screen and (max-width: 430px) {
+  header nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  header nav {
+    display: none;
+  }
+}
 header button {
   padding: 1.2rem 2.5rem;
   background-color: #000000;
   color: #FFFFFF;
   border-radius: 0.8rem;
-  font-size: 1.2ren;
+  font-size: 1.2rem;
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
   border: 2px solid #000000;
+}
+@media screen and (max-width: 430px) {
+  header button {
+    padding: 1rem 2.2rem;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  header button {
+    display: none;
+  }
 }
 header button:hover {
   background-color: transparent;
@@ -84,6 +110,20 @@ header button:hover {
 .hero .text-cont {
   width: 63.88rem;
   margin-top: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 430px) {
+  .hero .text-cont {
+    width: 90%;
+    margin-top: 6.4rem;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  .hero .text-cont {
+    width: 45rem;
+  }
 }
 .hero .text-cont h2 {
   color: #000000;
@@ -94,13 +134,28 @@ header button:hover {
   line-height: 78.571%;
   letter-spacing: -0.25rem;
 }
+@media screen and (max-width: 430px) {
+  .hero .text-cont h2 {
+    font-size: 5.22rem;
+  }
+}
 .hero .text-cont h2 .circle {
   width: 4.3rem;
   height: auto;
 }
+@media screen and (max-width: 430px) {
+  .hero .text-cont h2 .circle {
+    width: 3.5rem;
+  }
+}
 .hero .text-cont h2 .rectangle {
   width: 6.6rem;
   height: auto;
+}
+@media screen and (max-width: 430px) {
+  .hero .text-cont h2 .rectangle {
+    width: 4.58rem;
+  }
 }
 .hero .marquee {
   display: flex;
@@ -159,6 +214,17 @@ header button:hover {
   height: 100vh;
   gap: 2rem;
   padding: 0.3rem 0.8rem;
+  margin-bottom: 2.8rem;
+}
+@media screen and (max-width: 430px) {
+  .sample {
+    gap: 0.8rem;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  .sample {
+    display: none;
+  }
 }
 .sample .card-cont {
   width: 30%;
@@ -173,6 +239,12 @@ header button:hover {
   border-radius: 1.8rem;
   gap: 4rem;
   opacity: 0;
+}
+@media screen and (max-width: 430px) {
+  .sample .card-cont {
+    width: 100%;
+    height: 32.2%;
+  }
 }
 .sample .card-cont .circle {
   width: 8.2rem;
@@ -232,6 +304,11 @@ header button:hover {
   --animation-duration: 0.8s;
   opacity: 0;
 }
+@media screen and (max-width: 430px) {
+  .action .actiontxt {
+    width: 80%;
+  }
+}
 .action .actiontxt h2 {
   color: #000;
   text-align: center;
@@ -242,9 +319,21 @@ header button:hover {
   letter-spacing: -0.25rem;
   margin-bottom: 1.6rem;
 }
+@media screen and (max-width: 430px) {
+  .action .actiontxt h2 {
+    font-size: 3.4rem;
+    line-height: 3.3rem;
+    margin-bottom: 1.2rem;
+  }
+}
 .action .actiontxt h2 img {
   width: 4.6rem;
   height: auto;
+}
+@media screen and (max-width: 430px) {
+  .action .actiontxt h2 img {
+    width: 2.4rem;
+  }
 }
 .action .actiontxt p {
   width: 79%;
@@ -255,9 +344,21 @@ header button:hover {
   line-height: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 430px) {
+  .action .actiontxt p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
 .action .actiontxt .action-btn {
   display: flex;
   gap: 2rem;
+}
+@media screen and (max-width: 430px) {
+  .action .actiontxt .action-btn {
+    gap: 0.7rem;
+    flex-direction: column;
+  }
 }
 .action .actiontxt .action-btn button {
   padding: 1.2rem 3rem;
@@ -273,6 +374,14 @@ header button:hover {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
+}
+@media screen and (max-width: 430px) {
+  .action .actiontxt .action-btn button {
+    width: 9.3rem;
+    height: 4rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
 }
 .action .actiontxt .action-btn button:hover {
   background-color: transparent;
@@ -294,6 +403,16 @@ header button:hover {
   border-radius: 0.8rem;
   padding: 2rem;
   position: absolute;
+}
+@media screen and (max-width: 430px) {
+  .action .floating-cards .card {
+    display: none;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 810px) {
+  .action .floating-cards .card {
+    display: none;
+  }
 }
 .action .floating-cards .one {
   transform: rotate(7.6deg);
@@ -327,9 +446,20 @@ footer {
   flex-direction: column;
   gap: 1.2rem;
 }
+@media screen and (max-width: 430px) {
+  footer {
+    height: 33vh;
+    padding: 0.2rem 0.3rem;
+  }
+}
 footer img {
   width: 24.5rem;
   height: auto;
+}
+@media screen and (max-width: 430px) {
+  footer img {
+    width: 16rem;
+  }
 }
 footer nav {
   display: flex;

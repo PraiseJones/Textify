@@ -4,11 +4,22 @@
   width: 100%;
   padding: 0.5rem 2.3rem;
 }
+@media screen and (max-width: 430px) {
+  .upload_sect {
+    height: 100vh;
+    padding: 0.5rem 1.6rem;
+  }
+}
 .upload_sect h2 {
   font-weight: 700;
   font-size: 3.12rem;
   letter-spacing: -0.25rem;
   line-height: 6.7rem;
+}
+@media screen and (max-width: 430px) {
+  .upload_sect h2 {
+    line-height: 4.7rem;
+  }
 }
 .upload_sect .upload_cont {
   height: 33rem;
@@ -20,6 +31,11 @@
   align-items: center;
   overflow: hidden;
   margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 430px) {
+  .upload_sect .upload_cont {
+    height: 45%;
+  }
 }
 .upload_sect .upload_cont input {
   display: none;
@@ -53,12 +69,18 @@
   position: relative;
   cursor: pointer;
 }
+@media screen and (max-width: 430px) {
+  .upload_sect .select_cont {
+    height: 10%;
+    margin-bottom: 1.2rem;
+  }
+}
 .upload_sect .select_cont .default {
   width: 100%;
   height: 100%;
   background-color: #161616;
   color: #FFFFFF;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -78,6 +100,11 @@
   left: 0.2rem;
   display: none;
   --animate-duration: .5s;
+}
+@media screen and (max-width: 430px) {
+  .upload_sect .select_cont .select {
+    top: 6rem;
+  }
 }
 .upload_sect .select_cont .select div {
   padding: 0.7rem;
@@ -105,6 +132,12 @@
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+@media screen and (max-width: 430px) {
+  .upload_sect button {
+    width: 12rem;
+    font-size: 2.1rem;
+  }
 }
 .upload_sect button:hover {
   background-color: transparent;

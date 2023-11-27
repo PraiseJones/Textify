@@ -1,15 +1,30 @@
 @import "_variables";
 @import "/node_modules/animate.css/animate.css";
+@import "_mixins";
+
 .upload_sect {
   height: 200vh;
   width: 100%;
   padding: 0.5rem 2.3rem;
+
+  @include responsive("mobile") {
+    height: 100vh;
+    padding: 0.5rem 1.6rem;
+  }
 
   h2 {
     font-weight: 700;
     font-size: 3.12rem;
     letter-spacing: -0.25rem;
     line-height: 6.7rem;
+
+    @include responsive("mobile") {
+      line-height: 4.7rem;
+    }
+
+    // @include responsive("tablet") {
+    //   width: 45rem;
+    // }
   }
 
   .upload_cont {
@@ -22,6 +37,14 @@
     align-items: center;
     overflow: hidden;
     margin-bottom: 1.6rem;
+
+    @include responsive("mobile") {
+      height: 45%;
+    }
+
+    // @include responsive("tablet") {
+    //   width: 45rem;
+    // }
 
     input {
       display: none;
@@ -57,12 +80,21 @@
     position: relative;
     cursor: pointer;
 
+    @include responsive("mobile") {
+      height: 10%;
+      margin-bottom: 1.2rem;
+    }
+
+    // @include responsive("tablet") {
+    //   width: 45rem;
+    // }
+
     .default {
       width: 100%;
       height: 100%;
       background-color: $color3;
       color: $color1;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -83,6 +115,11 @@
       left: 0.2rem;
       display: none; 
       --animate-duration: .5s;
+
+      @include responsive("mobile") {
+        top: 6rem;
+      }
+      
 
       div{
         padding: .7rem;
@@ -115,6 +152,11 @@
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+
+    @include responsive("mobile") {
+      width: 12rem;
+      font-size: 2.1rem;
+    }
 
     &:hover {
       background-color: transparent;

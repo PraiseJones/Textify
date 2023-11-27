@@ -11,7 +11,4 @@ imgUpload.addEventListener('change', function() {
 selectbtn.addEventListener('click', () => {
     const dropDown = document.querySelector('.select');
     dropDown.classList.toggle('active');
-
-    
 })
-
