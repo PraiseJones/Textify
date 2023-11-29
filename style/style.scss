@@ -417,7 +417,7 @@ header {
     width: 48%;
     height: 100vh;
     position: relative;
-    background-color: #481818;
+    // background-color: #481818;
 
     @include responsive("mobile") {
       width: 100%;

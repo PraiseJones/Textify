@@ -403,7 +403,6 @@ header button:hover {
   width: 48%;
   height: 100vh;
   position: relative;
-  background-color: #481818;
 }
 @media screen and (max-width: 430px) {
   .action .floating-cards {
