@@ -299,6 +299,11 @@ header button:hover {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 430px) {
+  .action {
+    height: 150vh;
+  }
+}
 .action .actiontxt {
   width: 65%;
   margin-bottom: 3rem;
@@ -311,7 +316,7 @@ header button:hover {
 }
 @media screen and (max-width: 430px) {
   .action .actiontxt {
-    width: 80%;
+    width: 88%;
   }
 }
 .action .actiontxt h2 {
@@ -351,8 +356,10 @@ header button:hover {
 }
 @media screen and (max-width: 430px) {
   .action .actiontxt p {
+    width: 80%;
     font-size: 1rem;
     line-height: 1.4rem;
+    margin-bottom: 1.3rem;
   }
 }
 .action .actiontxt .action-btn {
@@ -382,10 +389,10 @@ header button:hover {
 }
 @media screen and (max-width: 430px) {
   .action .actiontxt .action-btn button {
-    width: 9.3rem;
+    width: 9.8rem;
     height: 4rem;
     padding: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 .action .actiontxt .action-btn button:hover {
@@ -394,8 +401,15 @@ header button:hover {
 }
 .action .floating-cards {
   width: 48%;
-  height: 150vh;
+  height: 100vh;
   position: relative;
+  background-color: #481818;
+}
+@media screen and (max-width: 430px) {
+  .action .floating-cards {
+    width: 100%;
+    height: 100vh;
+  }
 }
 .action .floating-cards .card {
   width: 18rem;
@@ -411,7 +425,8 @@ header button:hover {
 }
 @media screen and (max-width: 430px) {
   .action .floating-cards .card {
-    display: none;
+    width: 10rem;
+    height: 10rem;
   }
 }
 @media screen and (min-width: 431px) and (max-width: 810px) {
@@ -428,17 +443,34 @@ header button:hover {
   transform: rotate(-4.91deg);
   animation: rotateNeg4 0.8s 0.2s ease-in both;
 }
+@media screen and (max-width: 430px) {
+  .action .floating-cards .two {
+    right: 0.8rem;
+  }
+}
 .action .floating-cards .three {
   top: 48%;
   left: 10%;
   transform: rotate(-7.371deg);
   animation: rotateNeg7 0.8s 0.5s ease-in both;
 }
+@media screen and (max-width: 430px) {
+  .action .floating-cards .three {
+    top: 40%;
+    left: 1%;
+  }
+}
 .action .floating-cards .four {
   top: 51%;
   right: -18%;
   transform: rotate(9.488deg);
   animation: rotate9 0.8s 0.8s ease-in both;
+}
+@media screen and (max-width: 430px) {
+  .action .floating-cards .four {
+    top: 43%;
+    right: 1%;
+  }
 }
 
 footer {
