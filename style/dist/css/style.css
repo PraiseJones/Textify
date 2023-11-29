@@ -187,6 +187,11 @@ header button:hover {
   font-size: 3.8rem;
   font-weight: 400;
 }
+@media screen and (max-width: 430px) {
+  .hero .marquee .marquee-content p {
+    font-size: 2.7rem;
+  }
+}
 .hero .one {
   z-index: 99;
   transform: rotate(6.219deg);
