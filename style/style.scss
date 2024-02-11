@@ -28,7 +28,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.2rem 2rem;
   background-color: rgb(255 255 255 / 36%);
@@ -38,17 +38,59 @@ header {
   width: 100%;
   z-index: 1000;
 
+  @include responsive("mobile") {
+    justify-content: space-between;
+  }
+
+  @include responsive("tablet") {
+    justify-content: space-between;
+  }
+
   img {
     width: 8.3rem;
     height: auto;
     cursor: pointer;
   }
 
+  input {
+    display: none;
+  }
+
+  label {
+    display: none;
+
+    i{
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+
+    .close-one {
+      display: none;
+    }
+
+    @include responsive("mobile") {
+      display: inline-block;
+    }
+
+    @include responsive("tablet") {
+      display: inline-block;
+    }
+  }
+
   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-right: 14.6rem;
 
       li {
         margin-right: 2.2rem;
@@ -62,7 +104,7 @@ header {
             color: rgba(3, 3, 3, 1);
           }
 
-          &:active{
+          &:active {
             color: rgba(3, 3, 3, 1);
           }
         }
@@ -72,35 +114,35 @@ header {
     @include responsive("mobile") {
       display: none;
     }
-  
-    @include responsive("tablet") {
-      display: none;
-    }
-  }
 
-  button {
-    padding: 1.2rem 2.5rem;
-    background-color: $color2;
-    color: $color1;
-    border-radius: 0.8rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-    border: 2px solid $color2;
-
-    @include responsive("mobile") {
-      padding: 1rem 2.2rem;
-    }
-  
     @include responsive("tablet") {
       display: none;
     }
 
-    &:hover {
-      background-color: transparent;
-      color: $color2;
+    button {
+      padding: 1.2rem 2.5rem;
+      background-color: $color2;
+      color: $color1;
+      border-radius: 0.8rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in;
+      border: 2px solid $color2;
+
+      @include responsive("mobile") {
+        padding: 1rem 2.2rem;
+      }
+
+      @include responsive("tablet") {
+        display: none;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $color2;
+      }
     }
   }
 }
@@ -128,6 +170,7 @@ header {
 
     @include responsive("tablet") {
       width: 45rem;
+      margin-top: 12.4rem;
     }
 
     h2 {
@@ -225,22 +268,23 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   gap: 2rem;
   padding: 0.3rem 0.8rem;
   margin-bottom: 2.8rem;
 
   @include responsive("mobile") {
-    gap: .8rem;
+    gap: 0.8rem;
+    flex-direction: column;
   }
 
   @include responsive("tablet") {
-    display: none;
+    gap: 0.8rem;
   }
 
   .card-cont {
     width: 30%;
-    height: 80%;
+    height: 32rem;
     background-color: $color2;
     color: $color1;
     display: flex;
@@ -254,7 +298,6 @@ header {
 
     @include responsive("mobile") {
       width: 100%;
-      height: 32.2%;
     }
 
     .circle {
@@ -378,7 +421,7 @@ header {
       gap: 2rem;
 
       @include responsive("mobile") {
-        gap: .7rem;
+        gap: 0.7rem;
         flex-direction: column;
       }
 
@@ -401,8 +444,8 @@ header {
         @include responsive("mobile") {
           width: 9.8rem;
           height: 4rem;
-          padding: .8rem;
-          font-size: .9rem;
+          padding: 0.8rem;
+          font-size: 0.9rem;
         }
 
         &:hover {
@@ -413,75 +456,116 @@ header {
     }
   }
 
-  .floating-cards {
-    width: 48%;
-    height: 100vh;
-    position: relative;
-    // background-color: #481818;
-
-    @include responsive("mobile") {
-      width: 100%;
+    .floating-cards {
+      width: 48%;
       height: 100vh;
-    }
-
-    .card {
-      width: 18rem;
-      height: 18rem;
-      background-color: $color3;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      color: $color1;
-      border-radius: 0.8rem;
-      padding: 2rem;
-      position: absolute;
+      position: relative;
+      // background-color: #481818;
 
       @include responsive("mobile") {
-        width: 10rem;
-        height: 10rem;
+        width: 100%;
+        height: 100vh;
       }
-    
-      @include responsive("tablet") {
-        display: none;
+
+      .card {
+        width: 18rem;
+        height: 18rem;
+        background-color: $color3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        color: $color1;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        position: absolute;
+
+        @include responsive("mobile") {
+          width: 10rem;
+          height: 10rem;
+        }
+
+        @include responsive("tablet") {
+          display: none;
+        }
+      }
+
+      .one {
+        transform: rotate(7.6deg);
+      }
+      .two {
+        right: -9%;
+        top: 5%;
+        transform: rotate(-4.91deg);
+        animation: rotateNeg4 0.8s 0.2s ease-in both;
+
+        @include responsive("mobile") {
+          right: .8rem;
+        }
+      }
+      .three {
+        top: 48%;
+        left: 10%;
+        transform: rotate(-7.371deg);
+        animation: rotateNeg7 0.8s 0.5s ease-in both;
+
+        @include responsive("mobile") {
+          top: 40%;
+          left: 1%;
+        }
+      }
+      .four {
+        top: 51%;
+        right: -18%;
+        transform: rotate(9.488deg);
+        animation: rotate9 0.8s 0.8s ease-in both;
+
+        @include responsive("mobile") {
+          top: 43%;
+          right: 1%;
+        }
       }
     }
 
-    .one {
-      transform: rotate(7.6deg);
-    }
-    .two {
-      right: -9%;
-      top: 5%;
-      transform: rotate(-4.91deg);
-      animation: rotateNeg4 0.8s 0.2s ease-in both;
+  // .floating-cards {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-template-rows: repeat(2, 1fr);
+  //   gap: 2.3rem;
 
-      @include responsive("mobile") {
-        right: .8rem;
-      }
-    }
-    .three {
-      top: 48%;
-      left: 10%;
-      transform: rotate(-7.371deg);
-      animation: rotateNeg7 0.8s 0.5s ease-in both;
+  //   .card {
+  //     width: 18rem;
+  //     height: 18rem;
+  //     background-color: $color3;
+  //     // display: flex;
+  //     // justify-content: flex-start;
+  //     // align-items: flex-end;
+  //     color: $color1;
+  //     border-radius: 0.8rem;
+  //     padding: 2rem;
+  //     // position: absolute;
+  //   }
 
-      @include responsive("mobile") {
-        top: 40%;
-        left: 1%;
-      }
-    }
-    .four {
-      top: 51%;
-      right: -18%;
-      transform: rotate(9.488deg);
-      animation: rotate9 0.8s 0.8s ease-in both;
-
-      @include responsive("mobile") {
-        top: 43%;
-        right: 1%;
-      }
-    }
-  }
+  //   .one {
+  //     grid-row: 1 / span 1;
+  //     // transform: translate(-0.7rem, 0) rotate(7.6deg);
+  //     background-color: red;
+  //   }
+  //   .two {
+  //     grid-row: 1;
+  //     // transform: rotate(-4.91deg);
+  //     // animation: rotateNeg4 0.8s 0.2s ease-in both;
+  //   }
+  //   .three {
+  //     grid-row: 2;
+  //     // transform: rotate(-7.371deg);
+  //     // animation: rotateNeg7 0.8s 0.5s ease-in both;
+  //   }
+  //   .four {
+  //     grid-row: 2;
+  //     // transform: rotate(9.488deg);
+  //     // animation: rotate9 0.8s 0.8s ease-in both;
+  //   }
+  // }
 }
 
 footer {
@@ -496,7 +580,7 @@ footer {
 
   @include responsive("mobile") {
     height: 33vh;
-    padding: .2rem .3rem;
+    padding: 0.2rem 0.3rem;
   }
 
   img {
@@ -511,15 +595,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .7rem;
+    gap: 0.7rem;
 
     a {
       margin-right: 1rem;
       text-transform: uppercase;
       color: $color1;
-      
-      i{
-        
+
+      i {
         font-size: 2.1rem;
         color: $color1;
       }

@@ -18,7 +18,7 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
+@media screen and (min-width: 431px) and (max-width: 834px) {
   body {
     max-width: 100%;
   }
@@ -26,7 +26,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.2rem 2rem;
   background-color: rgba(255, 255, 255, 0.36);
@@ -37,15 +37,57 @@ header {
   width: 100%;
   z-index: 1000;
 }
+@media screen and (max-width: 430px) {
+  header {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 834px) {
+  header {
+    justify-content: space-between;
+  }
+}
 header img {
   width: 8.3rem;
   height: auto;
   cursor: pointer;
 }
+header input {
+  display: none;
+}
+header label {
+  display: none;
+}
+header label i {
+  cursor: pointer;
+}
+header label p {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+header label .close-one {
+  display: none;
+}
+@media screen and (max-width: 430px) {
+  header label {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 834px) {
+  header label {
+    display: inline-block;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 14.6rem;
 }
 header nav ul li {
   margin-right: 2.2rem;
@@ -66,12 +108,12 @@ header nav ul li a:active {
     display: none;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
+@media screen and (min-width: 431px) and (max-width: 834px) {
   header nav {
     display: none;
   }
 }
-header button {
+header nav button {
   padding: 1.2rem 2.5rem;
   background-color: #000000;
   color: #FFFFFF;
@@ -84,16 +126,16 @@ header button {
   border: 2px solid #000000;
 }
 @media screen and (max-width: 430px) {
-  header button {
+  header nav button {
     padding: 1rem 2.2rem;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
-  header button {
+@media screen and (min-width: 431px) and (max-width: 834px) {
+  header nav button {
     display: none;
   }
 }
-header button:hover {
+header nav button:hover {
   background-color: transparent;
   color: #000000;
 }
@@ -120,9 +162,10 @@ header button:hover {
     margin-top: 6.4rem;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
+@media screen and (min-width: 431px) and (max-width: 834px) {
   .hero .text-cont {
     width: 45rem;
+    margin-top: 12.4rem;
   }
 }
 .hero .text-cont h2 {
@@ -216,7 +259,6 @@ header button:hover {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
   gap: 2rem;
   padding: 0.3rem 0.8rem;
   margin-bottom: 2.8rem;
@@ -224,16 +266,17 @@ header button:hover {
 @media screen and (max-width: 430px) {
   .sample {
     gap: 0.8rem;
+    flex-direction: column;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
+@media screen and (min-width: 431px) and (max-width: 834px) {
   .sample {
-    display: none;
+    gap: 0.8rem;
   }
 }
 .sample .card-cont {
   width: 30%;
-  height: 80%;
+  height: 32rem;
   background-color: #000000;
   color: #FFFFFF;
   display: flex;
@@ -248,7 +291,6 @@ header button:hover {
 @media screen and (max-width: 430px) {
   .sample .card-cont {
     width: 100%;
-    height: 32.2%;
   }
 }
 .sample .card-cont .circle {
@@ -428,7 +470,7 @@ header button:hover {
     height: 10rem;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 810px) {
+@media screen and (min-width: 431px) and (max-width: 834px) {
   .action .floating-cards .card {
     display: none;
   }

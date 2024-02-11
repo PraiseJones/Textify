@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Assets/image/logoblack.png" type="image/x-icon"/>
+    <link rel="icon" href="./Assets/image/logoblack.png" type="image/x-icon" />
     <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" href="./style/dist/css/style.css" />
     <link
@@ -24,6 +24,21 @@
       <a href="./index.html"
         ><img src="./Assets/image/logoblack.png" alt=""
       /></a>
+
+      <input type="checkbox" name="checkbox" id="check" class="" />
+      <label for="check">
+        <!-- <i
+            class="fa-solid fa-circle-chevron-down"
+            id="dd-icon"
+          ></i>
+          <i
+            class="fa-solid fa-circle-xmark"
+            id="close-icon"
+          ></i> -->
+        <p class="open-one" id="dd-icon">-></p>
+        <p class="close-one" id="close-icon">X</p>
+      </label>
+
       <nav>
         <ul>
           <li>
@@ -36,10 +51,11 @@
             <a href="">About Us</a>
           </li>
         </ul>
+
+        <a href="./pages/Upload/upload.html" target="_blank">
+          <button>Try Out</button>
+        </a>
       </nav>
-      <a href="./pages/Upload/upload.html" target="_blank">
-        <button>Try Out</button>
-      </a>
     </header>
 
     <main>
@@ -75,7 +91,7 @@
           </div>
           <div class="marquee-content" aria-hidden="true">
             <p>Upload, Choose style, Convert, Download</p>
-            <p>Upload, Choose style, Convert, Download</p>            
+            <p>Upload, Choose style, Convert, Download</p>
           </div>
         </div>
       </section>

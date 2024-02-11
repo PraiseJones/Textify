@@ -1,6 +1,6 @@
 $mobile: 430px;
 $mintab: 431px;
-$tablet: 810px;
+$tablet: 834px;
 
 @mixin responsive($device) {
   @if $device == "mobile" {
